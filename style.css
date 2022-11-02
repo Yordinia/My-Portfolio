@@ -107,9 +107,8 @@ main {
 
 .languages li {
   background: #EBF0EE;
-  padding: 8px 12px;
+  padding: 8px 10px;
   text-decoration: none;
-  font-family: Inter;
   font-size: 12px;
   font-weight: 600;
   line-height: 16px;
@@ -124,7 +123,7 @@ a:link, a:visited, a:hover, a:active {
 
 .work-info {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;/* justify-items: center; to set the direction in the cross exis*/
   align-items: center;
   padding: 0;
   gap: 16px;
@@ -144,18 +143,110 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .disp-project {
-  width: 122px;
-  
-  padding: 0.5% 0;
-  border: 0;
+  width: 130px;
   background: #36b37f;
   border-radius: 5px;
   font-weight: 1000;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 20px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
-  height: 200px;
+  height: 60px;
+  border: #36b37f solid 5px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column; /* for all the members */
+  width: 100%;
+  margin-top: 2em;
+  padding: 2em;
+  background: url("images/illust1.png") no-repeat;
+}
+
+.about-me {
+  width: 351px;
+  height: 48px;
+  margin: 68px 12px 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color:  #172B4D;
+}
+
+.about-info {
+  margin: 24px 12px;
+  width: 327px;
+  height: 189px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526E;
+}
+
+.about-btn {
+  width: 159px;
+  height: 48px;
+  background: #36B37F;
+  border-radius: 4px;
+  color: rgb(255,255,255);
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 20px 100px;
+  border: solid 15px #36B37F;
+}
+
+.about-wrapper {
+  width: 327px;
+  height: 352px;
+  display: flex;
+  flex-direction: column; /*to set contets in the cross axis */
+  justify-content: flex-start;
+  padding: 0 0 0 0;
+  margin: 35px 24px;
+  background: #ebf0ee;
+  border-radius: 8px;
+  border: 1px solid #c1c7d0;
+  
+}
+
+.about-head {
+  width: 337px;
+  height: 32px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+  margin-bottom: 17px;
+}
+
+.works-details {
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* provide three columns with 1fr */
+  gap: 10px;
+  order: 1;
+  margin-top: 30px;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.works-details li {
+  max-width: 100%;
+  width: max-content;
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
 }
 
