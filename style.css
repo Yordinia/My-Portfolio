@@ -1,0 +1,16 @@
+* {
+    /* re set */
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: rgb(255,255,255);
+  background: url("images/bground.png") no-repeat;
+  font-family: 'ariel', 'helvetica', 'sans-serif';
+
+}
+
+.nav-container {
+  display: flex;
+}
