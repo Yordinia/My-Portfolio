@@ -54,6 +54,10 @@ main {
     top: 64px; */
 }
 
+#aspancolor {
+  color: #36b37e;
+}
+
 .menu {
   padding-right: 3em;
 }
