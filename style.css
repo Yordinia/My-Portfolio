@@ -12,6 +12,7 @@ body {
 main {
   background-color: rgb(255,255,255) solid;
   background: url("images/bground.png") no-repeat;
+  background-size: 100%;
   width: 375px; /* width of background image */
   padding-top: 1em;
 }
@@ -20,7 +21,6 @@ main {
   text-decoration: none;
   color: rgb(15,15,15);
   font-weight: 1000;
-  font-style: bold;
   letter-spacing: 0.05em;
 }
 
@@ -63,5 +63,24 @@ main {
     list-style-type: none;
     gap: 2em;
     margin: 2em 0.5em;
+    justify-content: center;
+}
+
+.myrecentworks {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;  
+  padding: 1em 25%;
+}
+
+.recent-cont {
+    display: flex;
+    align-items: center;
+}
+
+.my-container {
+    display: flex;
     justify-content: center;
 }
