@@ -117,6 +117,11 @@ main {
   border-radius: 15px;
 }
 
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #3A4A42;
+}
+
 .work-info {
   display: flex;
   flex-direction: column;
@@ -137,14 +142,20 @@ main {
   text-align: center;
   padding-bottom: 1.3em;
 }
-/* .my-container {
-  display: flex;
-  flex-direction: column;
-  
-  justify-content: center;
-  align-items: center;
-  height: 474px;
-  width: 375px;
-} */
 
+.disp-project {
+  width: 122px;
+  
+  padding: 0.5% 0;
+  border: 0;
+  background: #36b37f;
+  border-radius: 5px;
+  font-weight: 1000;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  height: 200px;
+}
 
