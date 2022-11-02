@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* got inter from google fonts */
 * {
     /* re set */
   margin: 0;
@@ -70,17 +72,79 @@ main {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
+  letter-spacing: 0.2em;
   text-align: center;  
   padding: 1em 25%;
 }
 
 .recent-cont {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1em;    
 }
 
-.my-container {
-    display: flex;
-    justify-content: center;
+.img-container {
+  background: url("images/image.png") no-repeat;
+  height: 474px;
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: -1em;
+  border-radius: 13px;
 }
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 16px;
+  padding: 8px 12px;
+  width: 327px;
+  border-radius: 4px;
+}
+
+.languages li {
+  background: #EBF0EE;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  border-radius: 15px;
+}
+
+.work-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 16px;
+}
+
+.work-title {
+  width: 295px;
+  height: 57px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #3A4A42;
+  letter-spacing: 0.2em;
+  text-align: center;
+  padding-bottom: 1.3em;
+}
+/* .my-container {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+  height: 474px;
+  width: 375px;
+} */
+
+
