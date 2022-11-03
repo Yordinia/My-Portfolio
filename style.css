@@ -94,13 +94,13 @@ main {
 }
 
 .myrecentworks {
-  width: 100%;
-  font-size: 40px;
+  width: 200px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 52px;
   letter-spacing: 0.2em;
   text-align: center;
-  padding: 1em 25%;
+  padding: 0.3em 0.3em;
 }
 
 .recent-cont {
@@ -190,10 +190,11 @@ a:active {
 .about {
   display: flex;
   flex-direction: column; /* for all the members */
-  width: 100%;
-  margin-top: 2em;
-  padding: 2em;
+  max-width: 327px;
+  margin-top: 2em 0 0 0;
+  padding: 0 2em;
   background: url("images/illust1.png") no-repeat;
+
 }
 
 .about-me {
