@@ -20,12 +20,16 @@ body {
   margin: 0;
 }
 
+.first-page {
+  background: #fff url("images/bground.png") no-repeat;
+  max-width: 327px;
+}
+
 main {
   background-color: rgb(255, 255, 255) solid;
-  background-image: url("images/bground.png") no-repeat;
-  background-size: 100%;
-  width: 100%; /* width of background image */
-  padding-top: 1em;
+  max-width: 327px;
+  padding: 0.1rem 0 0 0;
+  margin: 0 auto;
 }
 
 .logo {
@@ -37,6 +41,7 @@ main {
 }
 
 .nav-container {
+  margin: 0 auto;
   display: flex;
   max-width: 327px;
   padding: 1em 1em;
@@ -47,16 +52,16 @@ main {
 }
 
 .intro {
-  /* height: 192px; */
-  width: 327px;
+  min-height: 192px;
+  max-width: 327px;
   text-align: center;
   margin: 1em 0;
   color: #172b4d;
   max-width: 327px;
-
+  padding: 0;
+}
   /* left: 24px;
     top: 64px; */
-}
 
 #aspancolor {
   color: #36b37e;
@@ -76,7 +81,7 @@ main {
   text-align: center;
   color: #172b4d;
   max-width: 327px;
-  margin: 0 1em;
+  margin: 0 10;
   padding: 0 0;
 }
 
@@ -88,13 +93,13 @@ main {
   display: flex;
   list-style-type: none;
   gap: 2em;
-  margin: 2em 0.5em;
+  margin: 2em 0.5rem;
   justify-content: center;
   width: 100%;
 }
 
 .myrecentworks {
-  width: 200px;
+  width: 75%;
   font-size: 25px;
   font-weight: 700;
   line-height: 52px;
@@ -113,9 +118,9 @@ main {
 
 .img-container {
   background: url("images/image.png") no-repeat;
-  height: 474px;
-  width: auto;
-  margin: 0 auto;
+  min-height: 474px;
+  max-width: 327px;
+  margin: 0;
   margin-bottom: -1em;
   border-radius: 13px;
 }
@@ -162,7 +167,7 @@ a:active {
 
 .work-title {
   width: 295px;
-  height: 57px;
+  min-height: 57px;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -183,7 +188,7 @@ a:active {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
-  height: 60px;
+  min-height: 60px;
   border: #36b37f solid 5px;
 }
 
@@ -194,13 +199,12 @@ a:active {
   margin-top: 2em 0 0 0;
   padding: 0 2em;
   background: url("images/illust1.png") no-repeat;
-
 }
 
 .about-me {
   width: 351px;
-  height: 48px;
-  margin: 68px 12px 0;
+  min-height: 48px;
+  margin: 68px 12px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -211,7 +215,7 @@ a:active {
 .about-info {
   margin: 24px 12px;
   width: 327px;
-  height: 189px;
+  min-height: 189px;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -221,7 +225,7 @@ a:active {
 
 .about-btn {
   width: 159px;
-  height: 48px;
+  min-height: 48px;
   background: #36b37f;
   border-radius: 4px;
   color: rgb(255, 255, 255);
@@ -248,7 +252,7 @@ a:active {
 
 .about-head {
   width: 337px;
-  height: 32px;
+  min-height: 32px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
