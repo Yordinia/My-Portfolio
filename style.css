@@ -291,3 +291,75 @@ form {
   padding: 0.1rem 0 0 0;
   margin: 0 auto;
 }
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 64px 24px;
+  gap: 58px;
+  position: absolute;
+  width: 375px;
+  height: 879px;
+  left: 360px;
+  top: 6196px;
+}
+
+.footer-content {
+  width: 327px;
+  height: 363px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172B4D;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.footer-input {
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 327px;
+height: 330px;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.input {
+  width: 327px;
+  height: 48px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+  
+
+
+.footer-input {
+  position: absolute;
+height: 18px;
+left: 16px;
+right: 16px;
+top: calc(50% - 18px/2);
+
+/* Theme 2 / Text Input Normal */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+display: flex;
+align-items: center;
+color: #6B778C;
+
+
+}
