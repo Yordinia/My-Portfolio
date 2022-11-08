@@ -28,7 +28,6 @@ main {
   max-width: 327px;
   padding: 0.1rem 0 0 0;
   margin: 0 auto;
-  margin: 0 auto;
 }
 
 .logo {
@@ -88,9 +87,8 @@ main {
 .footer-media-link {
   max-width: 327px;
   position: relative;
-  top: 550px
+  top: 550px;
 }
-
 
 .socials {
   display: flex;
@@ -115,17 +113,14 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 1em;
+  margin-bottom: 1em auto;
   max-width: 327px;
-  margin: 0 auto;
 }
 
 .img-container {
   background: url("images/image.png") no-repeat;
   min-height: 474px;
   max-width: 327px;
-  margin: 0;
-  margin-bottom: -1em;
   border-radius: 13px;
   margin: 0 auto;
 }
@@ -209,7 +204,7 @@ a:active {
 .about-me {
   width: 351px;
   min-height: 48px;
-  margin: 70px 12px 0px 12px;
+  margin: 70px 12px 0 12px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -329,29 +324,14 @@ footer {
 .footer-content {
   width: 327px;
   height: 363px;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   flex: none;
   order: 0;
-  flex-grow: 0;
-}
-
-.footer-input {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  align-items: center;
-  padding: 0px;
-  gap: 24px;
-  width: 327px;
-  height: 330px;
-  flex: none;
-  order: 1;
   flex-grow: 0;
 }
 
@@ -364,19 +344,22 @@ footer {
 }
 
 .footer-input {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  gap: 24px;
+  width: 327px;
   position: absolute;
   height: 18px;
   left: 16px;
   right: 16px;
-  top: calc(50% - 18px/2);
-  font-family: 'Inter';
+  top: calc(50% - 18px / 2);
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
-  color: #6B778C;
+  color: #6b778c;
 }
 
 .input-area {
@@ -391,12 +374,11 @@ footer {
   margin: 0 auto;
   width: 375px;
   height: 189px;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   top: 66rem;
   text-align: center;
-  color: #42526E;
+  color: #42526e;
 }
