@@ -8,9 +8,6 @@
 
 * {
   margin: 0;
-
-  /* re set */
-
   padding: 0;
 }
 
@@ -23,6 +20,7 @@ body {
 .first-page {
   background: #fff url("images/baground.png") no-repeat;
   max-width: 327px;
+  margin: 0 auto;
 }
 
 main {
@@ -57,11 +55,8 @@ main {
   text-align: center;
   margin: 1em 0;
   color: #172b4d;
-  max-width: 327px;
   padding: 0;
 }
-  /* left: 24px;
-    top: 64px; */
 
 #aspancolor {
   color: #36b37e;
@@ -89,6 +84,12 @@ main {
   max-width: 327px;
 }
 
+.footer-media-link {
+  max-width: 327px;
+  position: relative;
+  top: 550px;
+}
+
 .socials {
   display: flex;
   list-style-type: none;
@@ -112,7 +113,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 1em;
+  margin-bottom: 1em auto;
   max-width: 327px;
 }
 
@@ -120,9 +121,8 @@ main {
   background: url("images/image.png") no-repeat;
   min-height: 474px;
   max-width: 327px;
-  margin: 0;
-  margin-bottom: -1em;
   border-radius: 13px;
+  margin: 0 auto;
 }
 
 .languages {
@@ -196,7 +196,7 @@ a:active {
   display: flex;
   flex-direction: column; /* for all the members */
   max-width: 327px;
-  margin-top: 2em 0 0 0;
+  margin: 0 auto;
   padding: 0 2em;
   background: url("images/illust1.png") no-repeat;
 }
@@ -204,7 +204,7 @@ a:active {
 .about-me {
   width: 351px;
   min-height: 48px;
-  margin: 68px 12px;
+  margin: 70px 12px 0 12px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -227,6 +227,22 @@ a:active {
   width: 159px;
   min-height: 48px;
   background: #36b37f;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 20px 100px;
+  border: solid 15px #36b37f;
+}
+
+.footer-about-btn {
+  width: 159px;
+  min-height: 48px;
+  background: #36b37f;
+  position: absolute;
+  top: 270px;
   border-radius: 4px;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -283,4 +299,86 @@ a:active {
   font-size: 12px;
   line-height: 16px;
   color: #36b37e;
+}
+
+form {
+  background-color: rgb(255, 255, 255) solid;
+  max-width: 327px;
+  padding: 0.1rem 0 0 0;
+  margin: 0 auto;
+  align-items: center;
+  width: 319px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px;
+  width: 100%;
+  gap: 58px;
+  position: relative;
+  height: 1143px;
+}
+
+.footer-content {
+  width: 327px;
+  height: 363px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.input {
+  width: 327px;
+  height: 48px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.footer-input {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  gap: 24px;
+  width: 327px;
+  position: absolute;
+  height: 18px;
+  left: 16px;
+  right: 16px;
+  top: calc(50% - 18px / 2);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+.input-area {
+  width: 327px;
+  height: 114px;
+  flex: none;
+  padding: 5px;
+}
+
+.footer-email {
+  position: absolute;
+  margin: 0 auto;
+  width: 375px;
+  height: 189px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  top: 66rem;
+  text-align: center;
+  color: #42526e;
 }
