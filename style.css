@@ -20,12 +20,14 @@ body {
 .first-page {
   background: #fff url("images/baground.png") no-repeat;
   max-width: 327px;
+  margin: 0 auto;
 }
 
 main {
   background-color: rgb(255, 255, 255) solid;
   max-width: 327px;
   padding: 0.1rem 0 0 0;
+  margin: 0 auto;
   margin: 0 auto;
 }
 
@@ -115,6 +117,7 @@ main {
   flex-direction: column;
   margin-bottom: 1em;
   max-width: 327px;
+  margin: 0 auto;
 }
 
 .img-container {
@@ -124,6 +127,7 @@ main {
   margin: 0;
   margin-bottom: -1em;
   border-radius: 13px;
+  margin: 0 auto;
 }
 
 .languages {
@@ -197,7 +201,7 @@ a:active {
   display: flex;
   flex-direction: column; /* for all the members */
   max-width: 327px;
-  margin-top: 2em 0 0 0;
+  margin: 0 auto;
   padding: 0 2em;
   background: url("images/illust1.png") no-repeat;
 }
@@ -205,7 +209,7 @@ a:active {
 .about-me {
   width: 351px;
   min-height: 48px;
-  margin: 68px 12px;
+  margin: 70px 12px 0px 12px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -228,8 +232,6 @@ a:active {
   width: 159px;
   min-height: 48px;
   background: #36b37f;
-  position: absolute;
-  top: 482px;
   border-radius: 4px;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -309,18 +311,19 @@ form {
   max-width: 327px;
   padding: 0.1rem 0 0 0;
   margin: 0 auto;
+  align-items: center;
+  width: 319px;
 }
 
-footer{
+footer {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 64px 24px;
-    gap: 58px;
-    position: relative;
-    width: 319px;
-    height: 1143px;
-    left: 386px;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px;
+  width: 100%;
+  gap: 58px;
+  position: relative;
+  height: 1143px;
 }
 
 .footer-content {
@@ -341,6 +344,7 @@ footer{
 .footer-input {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   align-items: center;
   padding: 0px;
   gap: 24px;
@@ -385,6 +389,7 @@ footer{
 
 .footer-email {
   position: absolute;
+  margin: 0 auto;
   width: 375px;
   height: 189px;
   font-family: 'Inter';
@@ -393,7 +398,6 @@ footer{
   font-size: 20px;
   line-height: 32px;
   top: 66rem;
-  left: 0;
   text-align: center;
   color: #42526E;
 }
