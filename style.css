@@ -284,3 +284,10 @@ a:active {
   line-height: 16px;
   color: #36b37e;
 }
+
+form {
+  background-color: rgb(255, 255, 255) solid;
+  max-width: 327px;
+  padding: 0.1rem 0 0 0;
+  margin: 0 auto;
+}
