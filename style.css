@@ -318,18 +318,25 @@ form {
   max-width: 327px;
   padding: 0.1rem 0 0 0;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  width: 327px;
+  height: 330px;
 }
 
 footer{
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 64px 24px;
-    gap: 58px;
-    position: relative;
-    width: 319px;
-    height: 1143px;
-    left: 386px;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px;
+  gap: 58px;
+  position: relative;  
+  width: 319px;  
+  height: 1143px;  
+  left: 386px;  
 }
 
 .footer-content {
@@ -361,7 +368,7 @@ footer{
 }
 
 .input {
-  width: 327px;
+  width: 100%;
   height: 48px;
   flex: none;
   order: 0;
