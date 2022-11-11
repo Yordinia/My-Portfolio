@@ -10,12 +10,14 @@ body {
 }
 
 .first-page {
-  background: #fff url("images/baground.png") no-repeat;
-  max-width: 327px;
+  background: #E5E5E5 url("images/baground.png") no-repeat;
+  max-width: 100%;  
+  padding: 160px 0px;
+  align-items: center;
 }
 
 main {
-  background-color: rgb(255, 255, 255) solid;
+  background-color:  #E5E5E5 solid;
   max-width: 327px;
   padding: 0.1rem 0 0 0;
   margin: 0 auto;
@@ -45,10 +47,9 @@ main {
 }
 
 .intro {
-  min-height: 192px;
-  max-width: 327px;
+  width: 100%;
   text-align: center;
-  margin: 1em 0;
+  margin: 1em auto;
   color: #172b4d;
   padding: 0;
 }
@@ -70,7 +71,7 @@ main {
   line-height: 28px;
   text-align: center;
   color: #172b4d;
-  max-width: 327px;
+  width: 100%;
   margin: 0 10;
   padding: 0 0;
 }
@@ -408,4 +409,143 @@ footer{
   left: 0;
   text-align: center;
   color: #42526E;
+}
+
+@media (min-width: 768px) {
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  background: #fff url("images/bground.png") no-repeat;
+  align-items: center;
+}
+
+.first-page {
+  width: 920px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 160px 0px;
+  gap: 24px;
+}
+
+.menu, .logo  {
+  visibility: hidden;
+}
+  
+.nav-container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    padding: 1em 1em;
+    margin-top: 1em;
+  }
+  
+.detail-nav ul {
+  visibility: visible;
+  left: 791px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  margin: 0 auto;
+  gap: 10px;
+  width: 87px;
+  height: 40px;
+}
+
+.detail-nav ul > li {
+  list-style-type: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+.intro {
+  width: 100%;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.37px;
+  color: #172B4D;
+  }
+  
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  .header-info {
+    width: 150%;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #172B4D;
+  }
+  
+  .recent-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0px;
+    gap: 48px;
+    position: absolute;
+    width: 1171px;
+    height: 1244px;
+    left: 740px;
+    top: 1059px;
+  }
+
+.myrecentworks {
+  width: 447px;
+  height: 48px;
+}
+  
+.dash {
+  visibility: hidden;
+}
+
+.my-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  width: 1171px;
+  height: 988px;
+}
+
+.row-one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 0px;
+  gap: 24px;
+  width: 1155px;
+  height: 482px;
+}
+
+.card {
+  width: 369px;
+  height: 474px;
+}
+
+.row-two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 24px;
+
+  width: 1171px;
+  height: 482px;
+}
+
 }
