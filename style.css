@@ -20,7 +20,6 @@ body {
 .first-page {
   background: #fff url("images/baground.png") no-repeat;
   max-width: 327px;
-  margin: 0 auto;
 }
 
 main {
@@ -87,8 +86,9 @@ main {
 .footer-media-link {
   max-width: 327px;
   position: relative;
-  top: 550px;
+  top: 550px
 }
+
 
 .socials {
   display: flex;
@@ -97,6 +97,14 @@ main {
   margin: 2em 0.5rem;
   justify-content: center;
   width: 100%;
+}
+
+.socials li {
+  transition: all 3s east-in-out;
+}
+
+.socials li:hover{
+  scale: 1.5;
 }
 
 .myrecentworks {
@@ -113,7 +121,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 1em auto;
+  margin-bottom: 1em;
   max-width: 327px;
 }
 
@@ -121,8 +129,9 @@ main {
   background: url("images/image.png") no-repeat;
   min-height: 474px;
   max-width: 327px;
+  margin: 0;
+  margin-bottom: -1em;
   border-radius: 13px;
-  margin: 0 auto;
 }
 
 .languages {
@@ -196,15 +205,15 @@ a:active {
   display: flex;
   flex-direction: column; /* for all the members */
   max-width: 327px;
-  margin: 0 auto;
-  padding: 0 2em;
+  margin-top: 2em 0 0 0;
+  padding: 0 0;
   background: url("images/illust1.png") no-repeat;
 }
 
 .about-me {
   width: 351px;
   min-height: 48px;
-  margin: 70px 12px 0 12px;
+  margin: 68px auto;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -213,7 +222,7 @@ a:active {
 }
 
 .about-info {
-  margin: 24px 12px;
+  margin: 24px auto;
   width: 327px;
   min-height: 189px;
   font-weight: 400;
@@ -224,17 +233,20 @@ a:active {
 }
 
 .about-btn {
+  align-items: center;
+  margin: auto;
+  padding: 12px;
+  gap: 10px;
   width: 159px;
-  min-height: 48px;
-  background: #36b37f;
+  height: 48px;
+  background: #36B37F;
   border-radius: 4px;
-  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
   text-align: center;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-  margin: 20px 100px;
-  border: solid 15px #36b37f;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
 }
 
 .footer-about-btn {
@@ -306,32 +318,45 @@ form {
   max-width: 327px;
   padding: 0.1rem 0 0 0;
   margin: 0 auto;
-  align-items: center;
-  width: 319px;
 }
 
-footer {
+footer{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 64px 24px;
-  width: 100%;
-  gap: 58px;
-  position: relative;
-  height: 1143px;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 24px;
+    gap: 58px;
+    position: relative;
+    width: 319px;
+    height: 1143px;
+    left: 386px;
 }
 
 .footer-content {
   width: 327px;
   height: 363px;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172b4d;
+  color: #172B4D;
   flex: none;
   order: 0;
+  flex-grow: 0;
+}
+
+.footer-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  width: 327px;
+  height: 330px;
+  flex: none;
+  order: 1;
   flex-grow: 0;
 }
 
@@ -344,41 +369,40 @@ footer {
 }
 
 .footer-input {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  align-items: center;
-  gap: 24px;
-  width: 327px;
   position: absolute;
   height: 18px;
   left: 16px;
   right: 16px;
-  top: calc(50% - 18px / 2);
+  top: calc(50% - 18px/2);
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #6b778c;
+  display: flex;
+  align-items: center;
+  color: #6B778C;
 }
 
 .input-area {
   width: 327px;
   height: 114px;
   flex: none;
-  padding: 5px;
+  order: 2;
+  flex-grow: 0;
 }
 
 .footer-email {
   position: absolute;
-  margin: 0 auto;
   width: 375px;
   height: 189px;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   top: 66rem;
+  left: 0;
   text-align: center;
-  color: #42526e;
+  color: #42526E;
 }
