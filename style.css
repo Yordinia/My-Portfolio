@@ -40,6 +40,10 @@ main {
   box-sizing: border-box;
 }
 
+.detail-nav {
+  visibility: hidden;
+}
+
 .intro {
   min-height: 192px;
   max-width: 327px;
