@@ -206,14 +206,14 @@ a:active {
   flex-direction: column; /* for all the members */
   max-width: 327px;
   margin-top: 2em 0 0 0;
-  padding: 0 2em;
+  padding: 0 0;
   background: url("images/illust1.png") no-repeat;
 }
 
 .about-me {
   width: 351px;
   min-height: 48px;
-  margin: 68px 12px;
+  margin: 68px auto;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -222,7 +222,7 @@ a:active {
 }
 
 .about-info {
-  margin: 24px 12px;
+  margin: 24px auto;
   width: 327px;
   min-height: 189px;
   font-weight: 400;
@@ -233,19 +233,20 @@ a:active {
 }
 
 .about-btn {
+  align-items: center;
+  margin: auto;
+  padding: 12px;
+  gap: 10px;
   width: 159px;
-  min-height: 48px;
-  background: #36b37f;
-  position: absolute;
-  top: 482px;
+  height: 48px;
+  background: #36B37F;
   border-radius: 4px;
-  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
   text-align: center;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-  margin: 20px 100px;
-  border: solid 15px #36b37f;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
 }
 
 .footer-about-btn {
