@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: 2px solid #f80606;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 
 .first-page {
   background: #E5E5E5 url("images/baground.png") no-repeat;
-  max-width: 100%;  
+  width: 100%;  
   padding: 160px 0px;
   align-items: center;
 }
@@ -31,15 +32,12 @@ main {
   letter-spacing: 0.05em;
 }
 
-.nav-container {
-  margin: 0 auto;
+.nav {
+  margin: 54px auto;
   display: flex;
-  max-width: 327px;
-  padding: 1em 1em;
-  margin-top: 1em;
+  flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
-  box-sizing: border-box;
+  padding: 1em 1em;
 }
 
 .detail-nav {
@@ -61,7 +59,8 @@ main {
 .nav {
   width: 100%;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -207,10 +206,19 @@ a:active {
   background: url("images/illust1.png") no-repeat;
 }
 
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  width: 100%;
+}
+
 .about-me {
-  width: 351px;
-  min-height: 48px;
+  width: 100%;
   margin: 68px auto;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -220,7 +228,7 @@ a:active {
 
 .about-info {
   margin: 24px auto;
-  width: 327px;
+  width: 100%;
   min-height: 189px;
   font-weight: 400;
   font-size: 20px;
@@ -472,13 +480,6 @@ body {
   color: #172B4D;
   }
   
-  .nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-  
   .header-info {
     width: 150%;
     margin: 0 auto;
@@ -543,9 +544,20 @@ body {
   align-items: center;
   padding: 4px 8px;
   gap: 24px;
-
   width: 1171px;
   height: 482px;
 }
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  padding-top: 250px;
+  gap: 24px;
+  max-width: 351px;
+}
+
+
 
 }
