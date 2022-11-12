@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 
-  /* outline: 2px solid #f80606;  */
+  outline: 2px solid #f80606; 
 }
 
 html {
@@ -20,21 +20,19 @@ body {
 }
 
 main {
-  width: 23.44rem;
+  width: 55%;
   box-sizing: border-box;
   margin: auto;
 }
 
 .first-page {
-  background-image: url("images/baground.png") center center cover;
-  height: 100vh;
+  background: url("images/baground.png") center center cover;
   align-items: center;
   display: flex;
   flex-direction: column;
   padding: 64px 24px;
   gap: 58px;
   width: 100%;
-  box-sizing: border-box;
 }
 
 .logo {
