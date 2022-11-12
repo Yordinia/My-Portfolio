@@ -2,26 +2,34 @@
   margin: 0;
   padding: 0;
   outline: 2px solid #f80606; 
+  overflow-x: hidden;
+}
+
+html {
+  width: 1440px;
+  box-sizing: border-box;
+  margin: auto;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Inter', 'ariel', Verdana, Tahoma, sans-serif;
+  overflow-x: hidden;
   padding: 0;
   margin: 0 auto;
   width: 100%;
-  overflow: hidden;
   box-sizing: border-box;
   align-items: center;
   font-size: 16px;
+
 }
 
 main {
   background: url("images/baground.png") no-repeat fixed;
   width: 23.44rem;
-  height: 100vh;
   overflow: hidden;
   box-sizing: border-box;
-  margin: auto;
+
 }
 
 .first-page {
@@ -37,9 +45,9 @@ main {
 
 .logo {
   text-decoration: none;
+  margin: 2em 0.5em;
   color: #28352F;
   font-weight: 1000;
-
   letter-spacing: 0.05em;
   box-sizing: border-box;
 }
@@ -49,10 +57,20 @@ main {
   flex-direction: row;
   justify-content: space-between;
   padding: 1em 0.7em;
-  max-width: 23.43rem;
+  max-width: 375px;
   height: 92px;
   box-sizing: border-box;
   margin: auto;
+}
+
+.menu {
+  height: 24px;
+  width: 100%;
+  position: relative;
+  left: 8px;
+  top: 30px;
+  border-radius: 0px;
+
 }
 
 .detail-nav {
@@ -342,8 +360,7 @@ footer {
   background: url("images/Frame.png") no-repeat;
   justify-content: center;
   gap: 58px;
-  width: 23.44rem;
-  margin: auto;
+  width: 100%;
 }
 
 .footer-wrap {
@@ -352,7 +369,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin: 15px auto;
+  margin: 15px 20px;
   gap: 58px;
   width: 100%;
 }
