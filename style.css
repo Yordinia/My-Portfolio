@@ -25,7 +25,6 @@ body {
 }
 
 main {
-  background: url("images/baground.png") no-repeat fixed;
   width: 23.44rem;
   overflow: hidden;
   box-sizing: border-box;
@@ -40,10 +39,10 @@ main {
   gap: 58px;
   width: 100%;
   box-sizing: border-box;
-  opacity: 1;
 }
 
 .logo {
+  overflow: visible;
   text-decoration: none;
   margin: 2em 0.5em;
   color: #28352F;
@@ -60,12 +59,10 @@ main {
   max-width: 375px;
   height: 92px;
   box-sizing: border-box;
-  margin: auto;
 }
 
 .menu {
   height: 24px;
-  width: 100%;
   position: relative;
   left: 8px;
   top: 30px;
@@ -360,7 +357,7 @@ footer {
   background: url("images/Frame.png") no-repeat;
   justify-content: center;
   gap: 58px;
-  width: 100%;
+  width: 27rem;
 }
 
 .footer-wrap {
@@ -441,7 +438,7 @@ form {
 @media (min-width: 768px) {
 
 body {
-  background: url("images/bground.png") no-repeat center center fixed; 
+  background: url("images/bground.png") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -657,4 +654,10 @@ form {
   visibility: hidden;
 }
 
+}
+
+@media (max-width: 768px) {
+  .hello {
+    background-image: url("images/baground.png");
+  }
 }
