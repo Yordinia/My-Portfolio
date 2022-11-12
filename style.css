@@ -5,28 +5,25 @@
   overflow-x: hidden;
 }
 
-html {
-  width: 1440px;
-  box-sizing: border-box;
-  margin: auto;
-  overflow-x: hidden;
-}
-
 body {
   font-family: 'Inter', 'ariel', Verdana, Tahoma, sans-serif;
-  overflow-x: hidden;
   padding: 0;
   margin: 0 auto;
   width: 100%;
+  overflow: hidden;
   box-sizing: border-box;
   align-items: center;
+  font-size: 16px;
+
 }
 
 main {
   background: url("images/baground.png") no-repeat fixed;
-  width: 100%;
+  width: 23.44rem;
   overflow: hidden;
   box-sizing: border-box;
+  margin: auto;
+
 }
 
 .first-page {
@@ -357,7 +354,8 @@ footer {
   background: url("images/Frame.png") no-repeat;
   justify-content: center;
   gap: 58px;
-  width: 100%;
+  width: 23.44rem;
+  margin: auto;
 }
 
 .footer-wrap {
@@ -366,7 +364,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin: 15px 20px;
+  margin: 15px auto;
   gap: 58px;
   width: 100%;
 }
