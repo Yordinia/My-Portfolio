@@ -2,19 +2,16 @@
   margin: 0;
   padding: 0;
   outline: 2px solid #f80606; 
-  overflow-x: hidden;
 }
 
 html {
   width: 1440px;
   box-sizing: border-box;
   margin: auto;
-  overflow-x: hidden;
 }
 
 body {
   font-family: 'Inter', 'ariel', Verdana, Tahoma, sans-serif;
-  overflow-x: hidden;
   padding: 0;
   margin: 0 auto;
   width: 100%;
@@ -26,12 +23,12 @@ body {
 
 main {
   width: 23.44rem;
-  overflow: hidden;
   box-sizing: border-box;
-
 }
 
 .first-page {
+  background-image: url("images/baground.png");
+  height: 100vh;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -54,10 +51,10 @@ main {
 .nav {
   display: flex;
   flex-direction: row;
+  margin: 0;
   justify-content: space-between;
   padding: 1em 0.7em;
   max-width: 375px;
-  height: 92px;
   box-sizing: border-box;
 }
 
@@ -437,7 +434,7 @@ form {
 
 @media (min-width: 768px) {
 
-body {
+.first-page {
   background: url("images/bground.png") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -460,7 +457,7 @@ main {
   visibility: visible;
   align-items: center;
   gap: 8px;
-  width: fit-content;
+  width: 100%;
   margin: auto;
   opacity: 1;
 }
@@ -486,19 +483,16 @@ main {
 .nav {
   margin: 0 auto;
   width: 100%;
-  }
+}
 
 .detail-nav ul {
+  margin: 0 auto;
   position:fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 8px;
   justify-content: center;
-  width: 1440px;
-  height: 72px;
-  left: 0px;
-  top: 0px;
 }
 
 .detail-nav ul > li {
@@ -519,18 +513,6 @@ main {
   letter-spacing: 0.37px;
   color: #172B4D;
   opacity: 1;
-  }
-  
-  .header-info {
-    width: 100%;
-    margin: 0 auto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    text-align: center;
-    color: #172B4D;
-    opacity: 1;
   }
   
   .recent-cont {
@@ -654,10 +636,4 @@ form {
   visibility: hidden;
 }
 
-}
-
-@media (max-width: 768px) {
-  .hello {
-    background-image: url("images/baground.png");
-  }
 }
