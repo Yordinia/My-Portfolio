@@ -595,10 +595,9 @@ form {
     align-items: flex-start;
     padding: 80px 0;
     gap: 24px;
-    width: 45%;
-    margin: 0 134px;
+    width: 55%;
     padding-right: 134px;
-    background: url("images/footer-desk-right.png") no-repeat right top,url("images/footer-desk-left.png") no-repeat left bottom;
+    background: url("images/footer-desk-right.png") no-repeat right top, url("images/footer-desk-left.png") no-repeat left bottom;
     margin: auto;
   }
 
