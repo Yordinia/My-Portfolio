@@ -199,6 +199,11 @@ main {
   border-radius: 13px;
 }
 
+.img-container > img:hover {
+  scale: 1.3;
+  background-color: #344563;
+}
+
 a:link,
 a:visited,
 a:hover,
@@ -390,6 +395,12 @@ form {
   padding: 10px 15px;
   width: 100%;
   opacity: 1;
+}
+
+.footer-input:hover {
+  scale: 0.98;
+  border: #ffc404 solid 7px;
+  border-radius: 30px;
 }
 
 .input {
