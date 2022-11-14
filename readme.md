@@ -31,7 +31,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
-Deployed on Github
+Online version - https://yordinia.github.io/A_Portfolio_Two.github.io/
 
 ## Authors
 
