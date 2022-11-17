@@ -12,80 +12,49 @@ html {
 body {
   font-family: 'Inter', 'ariel', Verdana, Tahoma, sans-serif;
   padding: 0;
-<<<<<<< HEAD
   margin: 0;
 }
 
 .first-page {
   background: #fff url("images/baground.png") no-repeat;
   max-width: 327px;
-=======
-  margin: 0 auto;
-  width: 100%;
-  box-sizing: border-box;
-  align-items: center;
-  font-size: 16px;
->>>>>>> animation-and-transition
 }
 
 main {
-  width: 55%;
-  box-sizing: border-box;
-  margin: auto;
-}
-
-.first-page {
-  background: url("images/baground.png") center center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 64px 24px;
-  gap: 58px;
-  width: 100%;
+  background-color: rgb(255, 255, 255) solid;
+  max-width: 327px;
+  padding: 0.1rem 0 0 0;
+  margin: 0 auto;
 }
 
 .logo {
-  overflow: visible;
   text-decoration: none;
   margin: 2em 0.5em;
-  color: #28352f;
+  color: rgb(15, 15, 15);
   font-weight: 1000;
   letter-spacing: 0.05em;
-  box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-.detail-nav {
-  visibility: hidden;
-=======
-.nav {
+.nav-container {
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  margin: auto;
+  max-width: 327px;
+  padding: 1em 1em;
+  margin-top: 1em;
   justify-content: space-between;
-  padding: 1em 0.7em;
-  max-width: 375px;
+  overflow: hidden;
   box-sizing: border-box;
-}
-
-.menu {
-  height: 24px;
-  position: relative;
-  left: 8px;
-  top: 30px;
-  border-radius: 0;
 }
 
 .detail-nav {
   visibility: hidden;
-  margin: auto;
->>>>>>> animation-and-transition
 }
 
 .intro {
-  width: 100%;
+  min-height: 192px;
+  max-width: 327px;
   text-align: center;
-  margin: 1em auto;
+  margin: 1em 0;
   color: #172b4d;
   padding: 0;
 }
@@ -94,18 +63,24 @@ main {
   color: #36b37e;
 }
 
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
 .header-info {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   text-align: center;
   color: #172b4d;
-  width: 100%;
+  max-width: 327px;
   margin: 0 10;
   padding: 0 0;
 }
 
-<<<<<<< HEAD
 .media-link {
   max-width: 327px;
 }
@@ -117,18 +92,15 @@ main {
 }
 
 
-=======
->>>>>>> animation-and-transition
 .socials {
   display: flex;
   list-style-type: none;
   gap: 2em;
-  margin: 1rem 0.5rem;
+  margin: 2em 0.5rem;
   justify-content: center;
   width: 100%;
 }
 
-<<<<<<< HEAD
 .socials li {
   transition: all 3s east-in-out;
 }
@@ -164,8 +136,6 @@ main {
   border-radius: 13px;
 }
 
-=======
->>>>>>> animation-and-transition
 .languages {
   display: flex;
   flex-direction: row;
@@ -189,87 +159,6 @@ main {
   border-radius: 15px;
 }
 
-.works-details li {
-  max-width: 100%;
-  width: max-content;
-  background: #fff;
-  border-radius: 10px;
-  padding: 12px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #36b37e;
-}
-
-.socials li {
-  transition: all 3s east-in-out;
-}
-
-.socials li:hover {
-  scale: 1.5;
-}
-
-.myrecentworks {
-  font-weight: 700;
-  line-height: 52px;
-  letter-spacing: 0.2em;
-  text-align: center;
-  padding: 0.5em 0 0 0;
-  max-width: 100%;
-  color: #172b4d;
-  font-size: 40px;
-}
-
-.recent-cont {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  max-width: 327px;
-  padding: 64px 24px 0 24px;
-  gap: 58px;
-}
-
-.dash {
-  position: relative;
-  top: -40px;
-}
-
-.my-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  gap: 58px;
-  max-width: 379px;
-  padding: 64px 24px;
-}
-
-.row-one {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 4px 2px;
-  gap: 24px;
-  max-width: 331px;
-}
-
-.card {
-  width: 100%;
-}
-
-.img-container {
-  background: url("images/image.png") no-repeat;
-  width: 100%;
-  margin-bottom: 1em;
-  border-radius: 13px;
-}
-
-.img-container > img:hover {
-  scale: 1.3;
-  background-color: #344563;
-}
-
 a:link,
 a:visited,
 a:hover,
@@ -282,9 +171,9 @@ a:active {
   display: flex;
   flex-direction: column;/* justify-items: center; to set the direction in the cross exis */
   align-items: center;
+  padding: 0;
   gap: 16px;
-  width: 100%;
-  border-radius: 8px;
+  max-width: fit-content;
 }
 
 .work-title {
@@ -316,7 +205,6 @@ a:active {
 
 .about {
   display: flex;
-<<<<<<< HEAD
   flex-direction: column; /* for all the members */
   max-width: 327px;
   margin-top: 2em 0 0 0;
@@ -328,27 +216,6 @@ a:active {
   width: 351px;
   min-height: 48px;
   margin: 68px auto;
-=======
-  flex-direction: column;
-  align-items: center;
-  padding: 64px 25px;
-  gap: 58px;
-  width: 60vw;
-  margin: auto;
-}
-
-.about-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 25px;
-  gap: 24px;
-  background: url("images/about-left.png") left bottom no-repeat, url("images/about-right.png") right top no-repeat;
-  margin-left: -50px;
-}
-
-.about-me {
->>>>>>> animation-and-transition
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -357,12 +224,8 @@ a:active {
 }
 
 .about-info {
-<<<<<<< HEAD
   margin: 24px auto;
   width: 327px;
-=======
-  width: 100%;
->>>>>>> animation-and-transition
   min-height: 189px;
   font-weight: 400;
   font-size: 20px;
@@ -378,33 +241,30 @@ a:active {
   gap: 10px;
   width: 159px;
   height: 48px;
-<<<<<<< HEAD
   background: #36B37F;
-=======
-  background: #36b37f;
->>>>>>> animation-and-transition
   border-radius: 4px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-<<<<<<< HEAD
   color: #FFFFFF;
-=======
-  color: #fff;
->>>>>>> animation-and-transition
 }
 
 .footer-about-btn {
-  max-width: 129px;
+  width: 159px;
+  min-height: 48px;
   background: #36b37f;
+  position: absolute;
+  top: 270px;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-weight: 600;
   font-size: 15px;
-  color: #fff;
+  line-height: 20px;
+  margin: 20px 100px;
   border: solid 15px #36b37f;
-  border-radius: 4px;
 }
 
 .about-wrapper {
@@ -442,7 +302,6 @@ a:active {
   justify-content: space-evenly;
 }
 
-<<<<<<< HEAD
 .works-details li {
   max-width: 100%;
   width: max-content;
@@ -454,45 +313,6 @@ a:active {
   font-size: 12px;
   line-height: 16px;
   color: #36b37e;
-}
-
-form {
-  background-color: rgb(255, 255, 255) solid;
-  max-width: 327px;
-  padding: 0.1rem 0 0 0;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 24px;
-  width: 327px;
-  height: 330px;
-}
-
-footer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 64px 24px;
-  gap: 58px;
-  position: relative;  
-  width: 319px;  
-  height: 1143px;  
-  left: 386px;  
-}
-
-.footer-content {
-  width: 327px;
-  height: 363px;
-  font-family: 'Inter';
-  font-style: normal;
-=======
-footer {
-  background: url("images/footer-desk-right.png") no-repeat right bottom,;
-  margin: auto;
-  gap: 58px;
-  width: 100%;
 }
 
 .footer-wrap {
@@ -516,53 +336,35 @@ form {
 }
 
 .footer-content {
-  opacity: 1;
-  margin: auto;
-  width: 100%;
->>>>>>> animation-and-transition
+  width: 327px;
+  height: 363px;
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-<<<<<<< HEAD
   color: #172B4D;
   flex: none;
   order: 0;
   flex-grow: 0;
-=======
-  color: #172b4d;
->>>>>>> animation-and-transition
 }
 
 .footer-input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
   gap: 24px;
-<<<<<<< HEAD
   width: 327px;
   height: 330px;
   flex: none;
   order: 1;
   flex-grow: 0;
-=======
-  padding: 10px 15px;
-  width: 100%;
-  opacity: 1;
-}
-
-.footer-input:hover {
-  scale: 0.98;
-  border: #ffc404 solid 7px;
-  border-radius: 30px;
->>>>>>> animation-and-transition
 }
 
 .input {
   width: 100%;
   height: 48px;
-<<<<<<< HEAD
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -582,40 +384,14 @@ form {
   display: flex;
   align-items: center;
   color: #6B778C;
-=======
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
->>>>>>> animation-and-transition
 }
 
 .input-area {
-  background: url("images/Icon.png") no-repeat right bottom;
-  width: 100%;
+  width: 327px;
   height: 114px;
-<<<<<<< HEAD
   flex: none;
   order: 2;
   flex-grow: 0;
-}
-
-.footer-email {
-  position: absolute;
-  width: 375px;
-  height: 189px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  top: 66rem;
-  left: 0;
-  text-align: center;
-  color: #42526E;
-}
-=======
-  border: 2px solid #acb7c3;
-  border-radius: 8px;
-  padding: 10px 15px;
 }
 
 .footer-email {
@@ -656,7 +432,7 @@ form {
   .detail-nav {
     visibility: visible;
     align-items: center;
-    gap: 8px;
+    gap: 15px;
     width: 100%;
     margin: auto;
     opacity: 1;
@@ -825,4 +601,3 @@ form {
     visibility: hidden;
   }
 }
->>>>>>> animation-and-transition
