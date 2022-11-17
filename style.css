@@ -199,6 +199,14 @@ main {
   border-radius: 13px;
 }
 
+<<<<<<< HEAD
+=======
+.img-container > img:hover {
+  scale: 1.3;
+  background-color: #344563;
+}
+
+>>>>>>> animation-and-transition
 a:link,
 a:visited,
 a:hover,
@@ -401,6 +409,12 @@ form {
   opacity: 1;
 }
 
+.footer-input:hover {
+  scale: 0.98;
+  border: #ffc404 solid 7px;
+  border-radius: 30px;
+}
+
 .input {
   width: 100%;
   height: 48px;
@@ -455,7 +469,11 @@ form {
   .detail-nav {
     visibility: visible;
     align-items: center;
+<<<<<<< HEAD
     gap: 15px;
+=======
+    gap: 8px;
+>>>>>>> animation-and-transition
     width: 100%;
     margin: auto;
     opacity: 1;
