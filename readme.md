@@ -17,12 +17,16 @@ I'm Yordanos Temesgen (Yordi). I have background in learning, knowing how to lea
 
 ## Getting Started
 <details>
+  
+  <summary>My favorite quote</summary>
+---
+
 To get a local copy up and running follow these simple example steps.
 
-<summary>My favorite quote</summary>
 ---
 > Failure is an opportunity to learn.
 <img src='images/quote.png' alt='An image illustrating the following quote - Failure is an opportunity to learn.'/>
+---
 
 </details>
 
