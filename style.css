@@ -401,6 +401,12 @@ form {
   opacity: 1;
 }
 
+.footer-input:hover {
+  scale: 0.98;
+  border: #ffc404 solid 7px;
+  border-radius: 30px;
+}
+
 .input {
   width: 100%;
   height: 48px;
