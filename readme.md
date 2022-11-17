@@ -1,5 +1,5 @@
 # My_Portfolio   
-<img alt="An image illustrating sunlight and moon images, depending on the theme" src="images/sun.png">
+
 
 **A little about me **
 I'm Yordanos Temesgen (Yordi). I have background in learning, knowing how to learn, and also learning how to learn ! :-) 
@@ -10,23 +10,19 @@ I'm Yordanos Temesgen (Yordi). I have background in learning, knowing how to lea
 
 | No   | Languages | Framesworks |      Additional      |  Hobbies    |
 |------|----------:|-------------|----------------------|-------------|
-|     1|       HTML|   NONE   --:| Installed Linters    |Family Time  |
-|     2|        CSS|             |                      |   Youtube   |           
-|     3||          |             |                      |    :+1      |    
 
 
 ## Getting Started
+
 <details>
-  
   <summary>My favorite quote</summary>
----
+  
+---To get a local copy up and running follow these simple example steps.
 
-To get a local copy up and running follow these simple example steps.
-
----
+--- yaeh
 > Failure is an opportunity to learn.
 <img src='images/quote.png' alt='An image illustrating the following quote - Failure is an opportunity to learn.'/>
----
+---yaeh
 
 </details>
 
