@@ -344,6 +344,15 @@ a:active {
   justify-content: space-evenly;
 }
 
+button:hover {
+  scale: 1.3;
+  background-color: #98b336;
+  border: 12px solid#98b336 ;
+  border-radius: 50%;
+  line-height: 60%;
+  padding: 0;
+}
+
 footer {
   background: url("images/footer-desk-right.png") no-repeat right bottom,;
   margin: auto;
@@ -446,7 +455,7 @@ form {
   .detail-nav {
     visibility: visible;
     align-items: center;
-    gap: 8px;
+    gap: 15px;
     width: 100%;
     margin: auto;
     opacity: 1;
