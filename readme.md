@@ -2,9 +2,15 @@
 
 
 **A little about me **
-I'm Yordanos Temesgen (Yordi). I have background in learning, knowing how to learn, and also learning how to learn ! :-) 
+I'm Yordanos Temesgen (Yordi). I have background in learning and also .. learning how to learn ! :-) 
 ## Current status
+
 - A fulltime Microverse Student
+
+### Deployment
+## Live Demo Deployed on [Github-Pages]()
+
+> Online version of [MY PORTFOLIO WEBSITE](https://yordinia.github.io/A_Portfolio_Two.github.io/)
 
 ## Built With
 
@@ -27,11 +33,6 @@ I'm Yordanos Temesgen (Yordi). I have background in learning, knowing how to lea
 </details>
 
 <!-- This is a horizontal line here '---' and starting with > makes a quote like bar -->
-
-
-### Deployment
-
-Deployed on Github
 
 ## Authors
 
