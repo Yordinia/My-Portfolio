@@ -1,7 +1,7 @@
 {
   "name": "a_portfolio_two.github.io",
   "version": "1.0.0",
-  "description": "<img alt=\"An image illustrating sunlight and moon images, depending on the theme\" src=\"images/sun.png\">",
+  "description": "**A little about me **\r I'm Yordanos Temesgen (Yordi). I have background in learning and also .. learning how to learn ! :-) \r ## Current status",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
