@@ -87,7 +87,6 @@ main {
   text-align: center;
   color: #172b4d;
   width: 100%;
-  margin: 0 10;
   padding: 0 0;
 }
 
@@ -137,7 +136,7 @@ main {
 }
 
 .socials li {
-  transition: all 3s east-in-out;
+  transition: 3s east-in-out;
 }
 
 .socials li:hover {

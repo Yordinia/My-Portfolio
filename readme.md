@@ -32,7 +32,22 @@ I'm Yordanos Temesgen (Yordi). I have background in learning and also .. learnin
 
 </details>
 
-<!-- This is a horizontal line here '---' and starting with > makes a quote like bar -->
+<!--
+
+# ignore the following stylelint commads
+
+npm init -y
+npm install --save-dev hint@7.x
+npx hint .
+npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+npx stylelint "**/*.{css,scss}" --fix
+npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+npm audit fix --force
+npx eslint .
+
+ This is a horizontal line here '---' and starting with > makes a quote like bar
+
+ -->
 
 ## Authors
 
