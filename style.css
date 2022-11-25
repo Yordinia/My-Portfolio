@@ -44,7 +44,6 @@ main {
 
 nav {
   display: flex;
-  position: fixed;
   flex-direction: row;
   justify-content: space-between;
   padding: 0 0.7em;
@@ -453,8 +452,14 @@ form {
 
 .for-exit {
   background: url('./images/exit.svg') no-repeat right top;
+  margin-top: 1.3rem;
   width: 40px;
   height: 40px;
+}
+
+.active {
+  background-color: orangered;
+  text-decoration: underline overline orangered;
 }
 
 @media (min-width: 768px) {
@@ -491,6 +496,7 @@ form {
     width: 100vw;
     background-color: white;
     align-items: center;
+    position: fixed;
   }
 
   .detail-nav {

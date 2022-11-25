@@ -2,7 +2,7 @@
   "name": "a_portfolio_two.github.io",
   "version": "1.0.0",
   "description": "**A little about me **\r I'm Yordanos Temesgen (Yordi). I have background in learning and also .. learning how to learn ! :-) \r ## Current status",
-  "main": "index.js",
+  "main": "load.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/Yordinia/A_Portfolio_Two.github.io#readme",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
     "hint": "^7.1.3",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
