@@ -1,38 +1,35 @@
 * {
   margin: 0;
   padding: 0;
-
-  /* outline: 2px solid #f80606;  */
-}
-
-html {
-  width: 100vw;
+  box-sizing: border-box;
+  outline: 2px solid #f80606; 
 }
 
 body {
   font-family: 'Inter', 'ariel', Verdana, Tahoma, sans-serif;
   padding: 0;
   margin: 0 auto;
-  width: 100%;
+  width: 100vw;
   box-sizing: border-box;
   align-items: center;
   font-size: 16px;
 }
 
 main {
-  width: 55%;
+  width: 100vw;
   box-sizing: border-box;
   margin: auto;
 }
 
 .first-page {
-  background: url("images/baground.png") center center;
+  background: url("./images/baground.svg");
+  background-size: cover;
   align-items: center;
   display: flex;
   flex-direction: column;
   padding: 64px 24px;
   gap: 58px;
-  width: 100%;
+  width: 100vw;
 }
 
 .logo {
@@ -48,24 +45,21 @@ main {
 .nav {
   display: flex;
   flex-direction: row;
-  margin: auto;
   justify-content: space-between;
   padding: 1em 0.7em;
-  max-width: 375px;
-  box-sizing: border-box;
+  width: 100vw;
 }
 
 .menu {
-  height: 24px;
-  position: relative;
-  left: 8px;
-  top: 30px;
-  border-radius: 0;
+  margin: 37px 10px 37px 0;
 }
 
 .detail-nav {
-  visibility: hidden;
-  margin: auto;
+  display: none;
+}
+
+.detail-nav li{
+  list-style-type: none;
 }
 
 .intro {
@@ -159,7 +153,9 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 327px;
+  margin: auto;
+  /* max-width: 327px; */
+  width: 100vw;
   padding: 64px 24px 0 24px;
   gap: 58px;
 }
@@ -175,7 +171,8 @@ main {
   align-items: center;
   margin: auto;
   gap: 58px;
-  max-width: 379px;
+  /* max-width: 379px; */
+  width: 100vw;
   padding: 64px 24px;
 }
 
@@ -230,7 +227,7 @@ a:active {
 }
 
 .disp-project {
-  width: 130px;
+  min-width: 130px;
   background: #36b37f;
   border-radius: 5px;
   font-weight: 1000;
@@ -245,21 +242,23 @@ a:active {
 
 .about {
   background: url("images/about-me-left.svg") left top no-repeat, url("images/about-me-right.svg") right top no-repeat;
+  background-size: 118.87px;
+  background-size: 107.94px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 64px 25px;
   gap: 58px;
-  width: 100%;
+  width: 100vw;
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
   padding: 0 25px;
   gap: 24px;
-  margin-left: -50px;
 }
 
 .about-me {
@@ -268,6 +267,7 @@ a:active {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+  width: auto;
 }
 
 .about-info {
@@ -378,7 +378,7 @@ form {
 .footer-content {
   opacity: 1;
   margin: auto;
-  width: 100%;
+  width: 100vw;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -435,28 +435,25 @@ form {
 @media (min-width: 768px) {
   .first-page {
     background: url("images/bground.png") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    min-width: 1472.8013916015625px;
     align-items: center;
     box-sizing: border-box;
     margin: auto;
+    width: 100vw;
   }
 
   main {
     margin: auto;
-    min-width: 1440px;
+    width: 100vw;
     align-items: center;
     opacity: 1;
     box-sizing: border-box;
   }
 
   .detail-nav {
-    visibility: visible;
+    display: block;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
     width: 100%;
     margin: auto;
     opacity: 1;
@@ -465,8 +462,8 @@ form {
   .img-btn {
     visibility: hidden;
     opacity: 1;
-    width: 327px;
-    height: 48px;
+    min-width: 327px;
+    min-height: 48px;
   }
 
   .menu,
@@ -477,7 +474,7 @@ form {
   .nav {
     display: block;
     padding: 0 50%;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     background-color: white;
     align-items: center;
@@ -512,15 +509,9 @@ form {
   }
 
   .recent-cont {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
     padding: 80px 0;
-    margin: auto;
     gap: 48px;
-    opacity: 1;
     min-width: 1171px;
-    justify-content: center;
   }
 
   .myrecentworks {
@@ -590,8 +581,6 @@ form {
     align-items: center;
     padding: 4px 8px;
     gap: 24px;
-    min-width: 1171px;
-    opacity: 1;
   }
 
   .footer-wrap {
@@ -600,7 +589,7 @@ form {
     align-items: flex-start;
     padding: 80px 0;
     gap: 24px;
-    width: 75%;
+    width: 100vw;
     margin: auto;
   }
 
