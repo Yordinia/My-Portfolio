@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 2px solid #f80606; 
+  outline: 2px solid #f80606;
 }
 
 body {
@@ -131,10 +131,6 @@ nav {
   transition: all 3s east-in-out;
 }
 
-.socials li:hover {
-  scale: 1.5;
-}
-
 .myrecentworks {
   font-weight: 700;
   line-height: 52px;
@@ -151,6 +147,7 @@ nav {
   align-items: center;
   flex-direction: column;
   margin: auto;
+
   /* max-width: 327px; */
   width: 100vw;
   padding: 64px 24px 0 24px;
@@ -168,6 +165,7 @@ nav {
   align-items: center;
   margin: auto;
   gap: 58px;
+
   /* max-width: 379px; */
   width: 100vw;
   padding: 64px 24px;
@@ -434,18 +432,22 @@ form {
   margin: 2rem 1rem;
 }
 
-.display-nav ul li{
+.display-nav ul li {
   list-style: none;
   font-weight: 600;
   font-size: 37px;
   line-height: 44px;
-  color: #3A4A42;
+  color: #3a4a42;
   letter-spacing: 0.2rem;
   margin: 3.5rem 1rem;
 }
 
+.socials li:hover {
+  scale: 1.5;
+}
+
 .for-nav {
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   width: 100vw;
   height: 100vh;
 }
@@ -513,7 +515,6 @@ form {
     align-items: center;
     gap: 38px;
     justify-content: center;
-    
   }
 
   .detail-nav ul > li {
