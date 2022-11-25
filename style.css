@@ -494,6 +494,19 @@ form {
   width: 100%;
   min-width: 311px;
   min-height: 220px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 15px;
+  padding-top: 16px;
+}
+
+.card-image a {
+  width: fit-content;
+  height: fit-content;
+}
+
+.card-image a img{
+  visibility: hidden;
 }
 
 .languages li a {

@@ -50,7 +50,7 @@ const evThing = document.querySelectorAll('nav, main, footer');
 const dispProject = document.querySelectorAll('.disp-project');
 const section = document.createElement('section');
 section.innerHTML = `
-  <div class="card-image"></div>
+  <div class="card-image"><a href='#portfolio' onclick='closePopup()' height='fit-content'><img src='./images/exit.svg' width= '40px' height= '40px'></a></div>
   <h4>Keeping track of hundreds of components</h4>
   <ul class="languages">
   <li><a href="#">Ruby on rails</a></li>
@@ -64,7 +64,6 @@ section.innerHTML = `
   <div class="disp-project">See Source <img src='./images/seeSource.svg' width= '18px'  height= '18px'></div>
   </div>
   `;
-
 section.classList.add('popup-style');
 
 function popup(){
@@ -73,7 +72,17 @@ function popup(){
   document.body.appendChild(section);
 }
 
+function closePopup(){
+  // exit.classList.add('for-exit');
+  // nav.appendChild(exit);
+  evThing.forEach(element=> element.style.display='unset');
+  evThing[0].style.display= 'flex';
+  document.body.classList.remove('for-body');
+  document.body.removeChild(section);
+}
+
 dispProject.forEach(buttons=> buttons.addEventListener('click', popup));
+// buttons.addEventListener('click', closePopup);
 
 
 /*``````````*/
