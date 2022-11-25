@@ -1,7 +1,6 @@
 # My_Portfolio   
 
 
-**A little about me **
 I'm Yordanos Temesgen (Yordi). I have background in learning and also .. learning how to learn ! :-) 
 ## Current status
 
