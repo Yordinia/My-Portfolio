@@ -42,7 +42,7 @@ main {
   box-sizing: border-box;
 }
 
-.nav {
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -432,6 +432,33 @@ form {
   margin: 1.5rem auto;
 }
 
+/* CSS Class for the JS  */
+.display-nav {
+  margin: 2rem 1rem;
+}
+
+.display-nav ul li{
+  list-style: none;
+  font-weight: 600;
+  font-size: 37px;
+  line-height: 44px;
+  color: #3A4A42;
+  letter-spacing: 0.2rem;
+  padding: 1.5rem 0;
+}
+
+.for-nav {
+  background-color: #F7F7F9;
+  width: 100vw;
+  height: 100vh;
+}
+
+.for-exit {
+  background: url('./images/exit.svg') no-repeat right top;
+  width: 40px;
+  height: 40px;
+}
+
 @media (min-width: 768px) {
   .first-page {
     background: url("images/bground.png") no-repeat center center;
@@ -471,7 +498,7 @@ form {
     visibility: hidden;
   }
 
-  .nav {
+  nav {
     display: block;
     padding: 0 50%;
     width: 100vw;
