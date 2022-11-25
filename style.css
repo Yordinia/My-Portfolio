@@ -89,6 +89,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: auto;
   align-items: center;
   list-style-type: none;
   gap: 16px;
@@ -466,6 +467,10 @@ form {
   padding: 1.3rem;
 }
 
+.for-desktop-nav {
+  display: none;
+}
+
 .popup-style {
   display: flex;
   flex-direction: column;
@@ -495,14 +500,15 @@ form {
   min-height: 220px;
   display: flex;
   flex-direction: row-reverse;
-  padding-right: 15px;
   padding-top: 16px;
 }
 
 .card-image a {
-  width:40px;
-  height: 40px;
-  background: url('./images/exit.png') center center no-repeat;
+  max-width:40px;
+  max-height: 40px;
+  background: url('./images/exit.png') no-repeat;
+  position: absolute;
+  right: 8%;
 }
 
 .languages li a {
@@ -647,6 +653,7 @@ form {
   .about {
     justify-content: center;
     padding: 80px 0;
+    margin: 0 auto;
     gap: 48px;
     width: 100%;
     display: flex;
@@ -667,11 +674,7 @@ form {
   .about-card-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 4px 8px;
     gap: 24px;
-    width: 100vw;
-    overflow: hidden;
   }
 
   .footer-wrap {
@@ -696,4 +699,103 @@ form {
   .footer-email {
     visibility: hidden;
   }
+}
+
+/* ````` style for popup `````` */
+
+.for-body {
+  background: #C1C7D0;
+  mix-blend-mode: multiply;
+  padding: 122px 260px;
+  padding: 1.3rem;
+}
+
+.for-desktop-nav {
+  display: block;
+  background-color: white;
+  width: 5rem;
+  height: 24px;
+}
+
+.popup-style h4 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.card-image {
+  background: url('./images/popup-desktop.svg') no-repeat;
+  min-width: 872px;
+  min-height: 616px;
+  border: 1px solid #DFE1E6;
+  border-radius: 8px;
+  background-size: cover;
+  border-radius: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 15px;
+  padding-top: 25px;
+}
+
+.card-image a {
+  display: none;
+}
+
+.languages li a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+}
+
+.popup-style p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.to-flex {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  width: 100%;
+}
+
+.to-flex .disp-project {
+  display: flex;
+  justify-content: space-between;
+  max-width: 311px;
+  max-height: 56px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  padding: 8px 6px;
+  gap: 12px;
+}
+
+#id1 {
+  order: 1;
+}
+
+#id4 {
+  order: 2;
+}
+
+#id2 {
+  order: 3;
+}
+
+#id3 {
+  order: 4;
+}
+
+.try {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
 }
