@@ -50,7 +50,7 @@ const evThing = document.querySelectorAll('nav, main, footer');
 const dispProject = document.querySelectorAll('.disp-project');
 const section = document.createElement('section');
 section.innerHTML = `
-  <div class="card-image"><a href='#portfolio' onclick='closePopup()' height='fit-content'><img src='./images/exit.svg' width= '40px' height= '40px'></a></div>
+  <div class="card-image"><a href='#portfolio'></a></div>
   <h4>Keeping track of hundreds of components</h4>
   <ul class="languages">
   <li><a href="#">Ruby on rails</a></li>
@@ -66,23 +66,20 @@ section.innerHTML = `
   `;
 section.classList.add('popup-style');
 
-function popup(){
-  evThing.forEach(element=> element.style.display='none')
-  document.body.classList.add('for-body');
-  document.body.appendChild(section);
-}
-
-function closePopup(){
-  // exit.classList.add('for-exit');
-  // nav.appendChild(exit);
-  evThing.forEach(element=> element.style.display='unset');
-  evThing[0].style.display= 'flex';
+function closePopup() {
+  evThing.forEach((element) => { element.style.display = 'unset'; });
+  evThing[0].style.display = 'flex';
   document.body.classList.remove('for-body');
   document.body.removeChild(section);
 }
 
-dispProject.forEach(buttons=> buttons.addEventListener('click', popup));
-// buttons.addEventListener('click', closePopup);
+function popup() {
+  evThing.forEach((element) => { element.style.display = 'none'; });
+  document.body.classList.add('for-body');
+  document.body.appendChild(section);
+  const exitPopup = document.querySelector('.card-image a');
+  exitPopup.addEventListener('click', closePopup);
+}
 
-
-/*``````````*/
+dispProject.forEach((buttons) => { buttons.addEventListener('click', popup); });
+/* `````````` */

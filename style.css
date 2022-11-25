@@ -156,13 +156,12 @@ nav {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  
   gap: 58px;
   width: 100vw;
   padding: 64px 0;
 }
 
-.row-one .row-two{
+.row-one .row-two {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -463,20 +462,20 @@ form {
 /* ````` style for popup `````` */
 
 .for-body {
-  background-color: #DFE1E6;
+  background-color: #dfe1e6;
   padding: 1.3rem;
 }
 
 .popup-style {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   text-align: center;
   padding: 16px;
   gap: 12px;
   width: 100%;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
 
@@ -484,13 +483,13 @@ form {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .card-image {
-  background: url('./images/popup-mobile.svg') no-repeat;
+  background: url('./images/popup-mobile.png') no-repeat;
   background-size: cover;
-  border-radius: 16px; 
+  border-radius: 16px;
   width: 100%;
   min-width: 311px;
   min-height: 220px;
@@ -501,12 +500,9 @@ form {
 }
 
 .card-image a {
-  width: fit-content;
-  height: fit-content;
-}
-
-.card-image a img{
-  visibility: hidden;
+  width:40px;
+  height: 40px;
+  background: url('./images/exit.png') center center no-repeat;
 }
 
 .languages li a {
@@ -514,7 +510,7 @@ form {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #3A4A42;
+  color: #3a4a42;
 }
 
 .popup-style p {
@@ -527,7 +523,7 @@ form {
 .to-flex {
   display: flex;
   justify-content: space-evenly;
-  gap: 2rem; 
+  gap: 2rem;
   width: 100%;
 }
 
@@ -543,7 +539,6 @@ form {
   padding: 8px 6px;
   gap: 12px;
 }
-
 
 @media (min-width: 1022px) {
   .first-page {
@@ -632,7 +627,8 @@ form {
     max-width: 1171px;
   }
 
-  .row-one, .row-two {
+  .row-one,
+  .row-two {
     display: flex;
     flex-direction: row;
     max-width: 1155px;
