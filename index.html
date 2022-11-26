@@ -185,8 +185,11 @@
         <!-- https://formspree.io/f/myyvlkqg -->
         <form action="https://yordinia.github.io/A_Portfolio_Two.github.io/" method="POST">
                 <input class="input" id="name" name="name" placeholder=" We Want Full Name" maxlength="30">
+                <small id="name-error"></small>
                 <input class="input" type="email" name="email" id='email' placeholder=" Email address">
-                <textarea class=" input input-area" id="message" cols="30" rows="10" placeholder="Write your message here"> </textarea>
+                <small id="email-error"></small>
+                <textarea class=" input input-area" id="message" cols="30" rows="10" placeholder="Write your message here" max="500"> </textarea>
+                <small id="textarea-error"></small>
                 <button class="footer-about-btn" name="submit" id='submit' type="submit">Get in touch</button>
         </form>
         <div class="footer-media-link">
