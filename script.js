@@ -86,3 +86,35 @@ function popup() {
 
 dispProject.forEach((buttons) => { buttons.addEventListener('click', popup); });
 /* `````````` */
+
+
+/*    ````````````  Validation  ````````````    */
+
+const form = document.querySelector('form');
+
+function outputMessage(boolean) {
+  const message = document.getElementById('msg');
+  if (boolean) {
+    message.classList.remove('error');
+  } else {
+    message.classList.add('error');
+    message.innerHTML = 'Please enter a correct email address format';
+  }
+}
+
+form.addEventListener('submit', (element) => {
+  const email = document.getElementById('email').value.trim;
+  const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  if (email !== email.toLowerCase()) {
+    element.preventDefault();
+    outputMessage(false);
+    return;
+  }
+  if (!emailRegex.test(email)) {
+    element.preventDefault();
+    outputMessage(false);
+    return;
+  }
+  outputMessage(true);
+});

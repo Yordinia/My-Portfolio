@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 2px solid #f80606;
 }
 
 body {
@@ -288,6 +287,11 @@ a:active {
 
 footer {
   background: url("images/bottom-left.svg") no-repeat bottom left, url("images/bottom-left2.svg") no-repeat bottom left 15%, url("images/bottom-right.svg") no-repeat bottom right;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
 }
 
 .footer-about-btn {
@@ -350,7 +354,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin: 15px auto;
   gap: 58px;
 }
@@ -366,24 +369,11 @@ form {
 }
 
 .footer-content {
-  opacity: 1;
-  margin: auto;
-  width: 100vw;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
   color: #172b4d;
-}
-
-.footer-input {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  padding: 10px 15px;
-  width: 100%;
-  opacity: 1;
 }
 
 .footer-input:hover {
@@ -554,13 +544,8 @@ form {
     box-sizing: border-box;
     margin: auto;
     width: 100vw;
+    overflow: hidden;
   }
-
-  /* main {
-    width: 100vw;
-    align-items: center;
-    box-sizing: border-box;
-  } */
 
   .img-btn {
     visibility: hidden;
@@ -676,14 +661,17 @@ form {
     gap: 24px;
   }
 
+  .footer {
+    width: 100vw;
+  }
+
   .footer-wrap {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 80px 0;
     gap: 24px;
-    width: 100vw;
-    margin: auto;
+    width: 100%;
   }
 
   .footer-content {
@@ -692,7 +680,6 @@ form {
 
   form {
     width: 65%;
-    opacity: 1;
   }
 
   .footer-email {
