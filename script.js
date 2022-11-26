@@ -91,14 +91,13 @@ dispProject.forEach((buttons) => { buttons.addEventListener('click', popup); });
 
 function validateEmail() {
   const emailAddress = document.getElementById('email').value.trim();
-  const regularExp = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  /* Source for the regural expression - https://www.javascripttutorial.net/javascript-dom/javascript-form/ */
+  const regularExp = /^([a-z\d-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
   document.forms[0].onsubmit = (e) => {
     if (regularExp.test(emailAddress)) {
       document.getElementById('error-message').innerHTML = '';
     } else {
-      document.getElementById('error-message').innerHTML = 'Please check the syntax of your email again';
-      document.getElementById('error-message').style = 'color:blue; outline: 2px solid red';
+      document.getElementById('error-message').innerHTML = 'Please check that all EMAIL characters are IN LOWER CASE';
+      document.getElementById('error-message').style = 'color: red; outline: 5px dotted pink';
       e.preventDefault();
     }
   };
