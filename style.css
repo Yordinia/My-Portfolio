@@ -375,6 +375,16 @@ form {
   color: #172b4d;
 }
 
+.footer-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 10px 15px;
+  width: 100%;
+  opacity: 1;
+}
+
 .footer-input:hover {
   scale: 0.98;
   border: #ffc404 solid 7px;
