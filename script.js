@@ -1,5 +1,3 @@
-const { even } = require("prelude-ls");
-
 const menu = document.querySelector('.menu');
 const nav = document.querySelector('nav');
 const navLogo = document.querySelector('.logo');
@@ -93,13 +91,21 @@ dispProject.forEach((buttons) => { buttons.addEventListener('click', popup); });
 /*    ````````````  Validation  ````````````    */
 
 // show a message with a type of the input
+
 function showMessage(input, message, type) {
 	// get the small element and set the message
 	const msg = input.parentNode.querySelector("small");
-	msg.innerText = message;
+	// msg.innerText = message;
 	// update the class for the input
 	input.className = type ? "success" : "error";
 	return type;
+}
+
+function hasValue(input, message) {
+	if (input.value.trim() === "") {
+		return showError(input, message);
+	}
+	return showSuccess(input);
 }
 
 function showError(input, message) {
@@ -108,13 +114,6 @@ function showError(input, message) {
 
 function showSuccess(input) {
 	return showMessage(input, "", true);
-}
-
-function hasValue(input, message) {
-	if (input.value.trim() === "") {
-		return showError(input, message);
-	}
-	return showSuccess(input);
 }
 
 function validateEmail(input, requiredMsg, invalidMsg) {
@@ -141,12 +140,13 @@ const EMAIL_INVALID = "Please enter a correct email address format";
 
 form.addEventListener("submit", function (event) {
 	event.preventDefault();
-  console.log('click',event.type)
-	// let nameValid = hasValue(form.elements["name"], NAME_REQUIRED);
-	// let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
+  console.log('click',form.elements)
 
-	// if (nameValid && emailValid) {
-	// 	event.submit();
-	// }
+	let nameValid = hasValue(form.elements["name"], NAME_REQUIRED);
+	let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
+
+	if (nameValid && emailValid) {
+		event.submit();
+	}
 });
 
