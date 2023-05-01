@@ -181,15 +181,14 @@
     </section>  
     </main>
     <footer id="2">
-        <div class="footer-wrap" >
         <p class="footer-content">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+        <div class="footer-wrap">
         <form action="https://formspree.io/f/myyvlkqg" method="POST">
-            <div class="footer-input">
-                <input class="input" type="text" name="attribute" placeholder=" Full Name" maxlength="30" required>
-                <input class="input" type="email" name="attribute" placeholder=" Email address" required>
-                <textarea class=" input input-area" name="attribute" id="" cols="30" rows="10" placeholder="Write your message here" max="500" required></textarea>
-                <button class="footer-about-btn" name="attribute" type="submit">Get in touch</button>
-            </div>
+                <input class="input" id="name" name="name" placeholder=" We Want Full Name" maxlength="30" required>
+                <input class="input" type="email" name="email" id='email' placeholder=" Email address">
+                <p id="error-message"></p>
+                <textarea class=" input input-area" id="message" name="textarea" cols="30" rows="10" placeholder="Write your message here" max="500" required> </textarea>
+            <button class="footer-about-btn" name="submit" id='submit' type="submit">Get in touch</button>
         </form>
         </div>
         <div class="footer-media-link">

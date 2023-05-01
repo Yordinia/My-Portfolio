@@ -86,3 +86,20 @@ function popup() {
 
 dispProject.forEach((buttons) => { buttons.addEventListener('click', popup); });
 /* `````````` */
+
+/*    ````````````  Validation  ````````````    */
+
+function validateEmail() {
+  const emailAddress = document.getElementById('email').value.trim();
+  const regularExp = /^([a-z\d-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+  document.forms[0].onsubmit = (e) => {
+    if (regularExp.test(emailAddress)) {
+      document.getElementById('error-message').innerHTML = '';
+    } else {
+      document.getElementById('error-message').innerHTML = 'Please check that all EMAIL characters are IN LOWER CASE';
+      document.getElementById('error-message').style = 'color: red; outline: 5px dotted pink';
+      e.preventDefault();
+    }
+  };
+}
+document.getElementById('submit').addEventListener('click', validateEmail);
