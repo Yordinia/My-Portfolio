@@ -20,7 +20,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 7rem 24px;
+  padding: 7rem 24px 0 24px;
   gap: 58px;
   width: 100vw;
 }
@@ -65,14 +65,15 @@ nav {
 }
 
 .header-info {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
+  font-family: 'Inter', 'ariel', Verdana, Tahoma, sans-serif;
   text-align: center;
   color: #172b4d;
-  width: 100%;
-  margin: 0 10;
-  padding: 0 0;
+  width: 80%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.2em;
 }
 
 .socials {
@@ -181,10 +182,14 @@ img {
 }
 
 .img-container {
-  background: url("images/image.png") no-repeat;
   width: 100%;
   margin-bottom: 1em;
   border-radius: 13px;
+  padding: 5rem 0;
+}
+
+.recent-cont img {
+  width: 10%;
 }
 
 a:link,
@@ -622,9 +627,7 @@ form {
   }
 
   .recent-cont {
-    padding: 80px 0;
-    gap: 48px;
-    width: 100%;
+    gap: 20px;
   }
 
   .dash {
