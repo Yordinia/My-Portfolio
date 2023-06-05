@@ -176,6 +176,10 @@ nav {
   margin: 10px;
 }
 
+img {
+  width: 100%;
+}
+
 .img-container {
   background: url("images/image.png") no-repeat;
   width: 100%;
