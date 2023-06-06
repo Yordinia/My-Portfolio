@@ -85,4 +85,8 @@ function popup() {
 }
 
 dispProject.forEach((buttons) => { buttons.addEventListener('click', popup); });
+
+document.addEventListener('submit', e=>{
+  e.target.reset();
+})
 /* `````````` */
