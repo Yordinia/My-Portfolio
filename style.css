@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 body {
   font-family: 'Inter', 'ariel', Verdana, Tahoma, sans-serif;
   padding: 0;
@@ -13,6 +19,10 @@ body {
   align-items: center;
   font-size: 16px;
 }
+
+main {
+  position: absolute;
+} 
 
 .first-page {
   background: url("./images/baground.svg");
@@ -563,12 +573,6 @@ form {
     margin: auto;
     width: 100vw;
   }
-
-  /* main {
-    width: 100vw;
-    align-items: center;
-    box-sizing: border-box;
-  } */
 
   .img-btn {
     visibility: hidden;
