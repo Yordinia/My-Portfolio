@@ -18,10 +18,10 @@ body {
   box-sizing: border-box;
   align-items: center;
   font-size: 16px;
+  position: absolute;
 }
 
 main {
-  position: absolute;
 } 
 
 .first-page {
