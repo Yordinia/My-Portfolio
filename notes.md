@@ -1,4 +1,25 @@
 # Responsive images
+
+// if i needed image loaders in my webpack
+
+ {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource', // Process image files as assets,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'my-images',
+            },
+          },
+        ],
+      },
+      {
+        test: /bootstrap\/dist\/js\/umd\//,
+        use: 'imports-loader?jQuery=jquery',
+      },
+
 img src='img/cat-500.jpg' 
     srcset='img/cat-500.jpg 500w,
             img/cat-1000.jpg 2x 1000w,

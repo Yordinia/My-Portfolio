@@ -4,6 +4,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: {
     index: './src/index.js', // Entry point for the application
   },
@@ -23,22 +24,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'), // Output to the 'distt' directory
     clean: true, // Clean the output directory before building
   },
-  optimization: {
-    runtimeChunk: 'single',
-  },
   module: {
     rules: [
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'], // Process CSS files with 'style-loader' and 'css-loader'
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource', // Process image files as assets
-      },
-      {
-        test: /bootstrap\/dist\/js\/umd\//,
-        use: 'imports-loader?jQuery=jquery',
       },
     ],
   },
