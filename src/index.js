@@ -42,11 +42,9 @@ const controls = new OrbitControls(camera, renderer.domElement);
 
 function addStar() {
   const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-  const material = new THREE.MeshStandardMaterial({ color: 0xf04fff });
+  const material = new THREE.MeshStandardMaterial({ color: 0x000000 });
   const star = new THREE.Mesh(geometry, material);
 
-  // randomly posision
-  // use randFloatSpread gets us random number bn -x to x
   const [x, y, z] = Array(3)
     .fill()
     .map(() => THREE.MathUtils.randFloatSpread(100));
@@ -54,7 +52,7 @@ function addStar() {
   scene.add(star);
 }
 
-Array(200).fill().forEach(addStar);
+Array(500).fill().forEach(addStar);
 
 // const spaceTexture = new THREE.TextureLoader().load('../src/images/bground.png');
 // scene.background = spaceTexture; // set background property
