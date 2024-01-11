@@ -12,7 +12,7 @@ canvas {
 }
 
 body {
-  font-family: 'Inter', 'ariel', Verdana, Tahoma, sans-serif;
+  font-family: "Inter", "ariel", Verdana, Tahoma, sans-serif;
   margin: 0 auto;
   width: 100vw;
   box-sizing: border-box;
@@ -22,7 +22,6 @@ body {
 }
 
 .first-page {
-
   background-size: cover;
   align-items: center;
   display: flex;
@@ -72,15 +71,17 @@ nav {
 }
 
 .header-info {
-  font-family: 'Inter', 'ariel', Verdana, Tahoma, sans-serif;
+  font-family: "Inter", "ariel", Verdana, Tahoma, sans-serif;
+  margin: 0 auto;
   text-align: center;
   color: #172b4d;
-  width: 80%;
+  width: 120%;
+  max-width: 700px;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 120%;
   line-height: 30px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 }
 
 .socials {
@@ -182,6 +183,9 @@ nav {
   width: 100%;
   max-width: 369px;
   margin: 10px;
+  border-radius: 1rem;
+  background-color: hsl(217, 72%, 93%);
+  opacity: 0.8;
 }
 
 img {
@@ -209,7 +213,7 @@ a:active {
 
 .work-info {
   display: flex;
-  flex-direction: column;/* justify-items: center; to set the direction in the cross exis */
+  flex-direction: column; /* justify-items: center; to set the direction in the cross exis */
   align-items: center;
   gap: 2rem;
   width: 100%;
@@ -245,7 +249,8 @@ a:active {
 }
 
 .about {
-  background: url("../src/images/about-me-left.svg") left top no-repeat, url("../src/images/about-me-right.svg") right top no-repeat;
+  background: url("../src/images/about-me-left.svg") left top no-repeat,
+    url("../src/images/about-me-right.svg") right top no-repeat;
   background-size: 118.87px;
   background-size: 107.94px;
   display: flex;
@@ -276,7 +281,6 @@ a:active {
 
 .about-info {
   width: 100%;
-  max-height: 189px;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -302,7 +306,9 @@ a:active {
 }
 
 footer {
-  background: url("../src/images/bottom-left.svg") no-repeat bottom left, url("../src/images/bottom-left2.svg") no-repeat bottom left 15%, url("../src/images/bottom-right.svg") no-repeat bottom right;
+  background: url("../src/images/bottom-left.svg") no-repeat bottom left,
+    url("../src/images/bottom-left2.svg") no-repeat bottom left 15%,
+    url("../src/images/bottom-right.svg") no-repeat bottom right;
 }
 
 .footer-about-btn {
@@ -343,7 +349,8 @@ footer {
 }
 
 .works-details {
-  max-width: 90%;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* provide three columns with 1fr */
   gap: 10px;
@@ -384,9 +391,9 @@ form {
   opacity: 1;
   margin: auto;
   width: 100vw;
+  max-width: 400px;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 180%;
   text-align: center;
   color: #172b4d;
 }
@@ -464,7 +471,7 @@ form {
 }
 
 .for-exit {
-  background: url('../src/images/exit.svg') no-repeat right top;
+  background: url("../src/images/exit.svg") no-repeat right top;
   margin-top: 1.3rem;
   width: 40px;
   height: 40px;
@@ -507,7 +514,7 @@ form {
 }
 
 .card-image {
-  background: url('../src/images/popup-mobile.png') no-repeat;
+  background: url("../src/images/popup-mobile.png") no-repeat;
   background-size: cover;
   border-radius: 16px;
   width: 100%;
@@ -521,7 +528,7 @@ form {
 .card-image a {
   max-width: 40px;
   max-height: 40px;
-  background: url('../src/images/exit.png') no-repeat;
+  background: url("../src/images/exit.png") no-repeat;
   position: absolute;
   right: 8%;
 }
@@ -675,6 +682,7 @@ form {
     gap: 24px;
     max-width: 920px;
     width: 100%;
+    height: fit-content;
   }
 
   .about-card-container {
@@ -730,7 +738,7 @@ form {
   }
 
   .card-image {
-    background: url('../src/images/popup-desktop.svg') no-repeat;
+    background: url("../src/images/popup-desktop.svg") no-repeat;
     min-width: 872px;
     min-height: 616px;
     border: 1px solid #dfe1e6;

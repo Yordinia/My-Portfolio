@@ -1,55 +1,65 @@
-import './style.css'
-import * as THREE from 'three';  
+import "./style.css";
+import * as THREE from "three";
 /*
 images
  background: url("../src/images/baground.svg");
 
 */
 
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1 , 1000);
- 
- const renderer = new THREE.WebGLRenderer({canvas: document.querySelector('#bg')})
- renderer.setPixelRatio( window.devicePixelRatio) // set pixed ratio
- renderer.setSize(window.innerWidth, window.innerHeight  ) // make it full screen canvas
- camera.position.setZ(30) // camera is positioned in the middle of the scene, give better prespective by moving it along the Z axis
- renderer.render(scene, camera) 
+const camera = new THREE.PerspectiveCamera(
+  75,
+  window.innerWidth / window.innerHeight,
+  0.1,
+  1000
+);
 
- const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
- const material = new THREE.MeshStandardMaterial({color: 0xFF6347})
+const renderer = new THREE.WebGLRenderer({
+  canvas: document.querySelector("#bg"),
+});
+renderer.setPixelRatio(window.devicePixelRatio); // set pixed ratio
+renderer.setClearColor(0xfff0ff);
+renderer.setSize(window.innerWidth, window.innerHeight); // make it full screen canvas
+camera.position.setZ(30); // camera is positioned in the middle of the scene, give better prespective by moving it along the Z axis
+renderer.render(scene, camera);
+
+const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
+const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
 
 const torus = new THREE.Mesh(geometry, material);
 
-scene.add(torus)
+scene.add(torus);
 
 // lighting
-const pointLight = new THREE.PointLight(0xffffff)
-pointLight.position.set(5,5,5) // to move it away from center
+const pointLight = new THREE.PointLight(0xffffff);
+pointLight.position.set(5, 5, 5); // to move it away from center
 
-const ambientLight = new THREE.AmbientLight(0Xffffff) // is more like a floodlignt that lights up everything
-scene.add(pointLight, ambientLight)
+const ambientLight = new THREE.AmbientLight(0xffffff); // is more like a floodlignt that lights up everything
+scene.add(pointLight, ambientLight);
 // PointLightHelper shows us the position of a point light
-const lightHelper = new THREE.PointLightHelper(pointLight)
-const gridHelper = new THREE.GridHelper(200,50)
-scene.add(lightHelper,gridHelper)
+const lightHelper = new THREE.PointLightHelper(pointLight);
+const gridHelper = new THREE.GridHelper(200, 50);
+scene.add(lightHelper, gridHelper);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
 function addStar() {
-    const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-    const material = new THREE.MeshStandardMaterial({color: 0xffffff})
-    const star = new THREE.Mesh(geometry, material)
+  const geometry = new THREE.SphereGeometry(0.25, 24, 24);
+  const material = new THREE.MeshStandardMaterial({ color: 0xf04fff });
+  const star = new THREE.Mesh(geometry, material);
 
-    // randomly posision
-    // use randFloatSpread gets us random number bn -x to x
-    const [x,y,z] = Array(3).fill().map(()=> THREE.MathUtils.randFloatSpread(100 ));
-    star.position.set(x,y,z);
-    scene.add(star)
+  // randomly posision
+  // use randFloatSpread gets us random number bn -x to x
+  const [x, y, z] = Array(3)
+    .fill()
+    .map(() => THREE.MathUtils.randFloatSpread(100));
+  star.position.set(x, y, z);
+  scene.add(star);
 }
 
-Array(200).fill().forEach(addStar)
+Array(200).fill().forEach(addStar);
 
 // const spaceTexture = new THREE.TextureLoader().load('../src/images/bground.png');
 // scene.background = spaceTexture; // set background property
@@ -79,7 +89,7 @@ Array(200).fill().forEach(addStar)
 // document.body.onscroll = moveCamera;// fires when user scrolls
 
 /// animate
-function animate(){
+function animate() {
   requestAnimationFrame(animate);
 
   torus.rotation.x += 0.01;
@@ -88,10 +98,10 @@ function animate(){
 
   controls.update();
 
-  renderer.render(scene, camera) 
+  renderer.render(scene, camera);
 }
 animate();
- /*
+/*
 
 
 
@@ -150,7 +160,6 @@ child {
 
 // Bottom line - easy to position elements how ever you like
 */
-
 
 /* `````````` 
 const menu = document.querySelector('.menu');
@@ -245,4 +254,3 @@ document.addEventListener('submit', e=>{
   e.target.reset();
 })
  `````````` */
-
