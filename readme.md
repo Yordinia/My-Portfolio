@@ -1,21 +1,21 @@
-# My_Portfolio   
+# My_Portfolio
 
+I'm Yordanos Temesgen (Yordi). I have background in learning and also .. learning how to learn !
 
-I'm Yordanos Temesgen (Yordi). I have background in learning and also .. learning how to learn ! :-) 
 ## Current status
 
 - A fulltime Microverse Student
 
 ### Deployment
-## Live Demo Deployed on [Github-Pages]()
 
-> Online version of [MY PORTFOLIO WEBSITE](https://yordinia.github.io/A_Portfolio_Two.github.io/)
+## Live Demo Deployed on [Github-Pages](https://yordinia.github.io/My-Portfolio/)
+
+> Online version of [MY PORTFOLIO WEBSITE](https://yordinia.github.io/My-Portfolio/)
 
 ## Built With
 
-| No   | Languages | Framesworks |      Additional      |  Hobbies    |
-|------|----------:|-------------|----------------------|-------------|
-
+| No  | Languages | Framesworks | Additional | Hobbies |
+| --- | --------: | ----------- | ---------- | ------- |
 
 ## Getting Started
 
@@ -25,9 +25,10 @@ I'm Yordanos Temesgen (Yordi). I have background in learning and also .. learnin
 ---To get a local copy up and running follow these simple example steps.
 
 --- yaeh
+
 > Failure is an opportunity to learn.
-<img src='images/quote.png' alt='An image illustrating the following quote - Failure is an opportunity to learn.'/>
----yaeh
+> <img src='images/quote.png' alt='An image illustrating the following quote - Failure is an opportunity to learn.'/>
+> ---yaeh
 
 </details>
 
@@ -39,15 +40,13 @@ I'm Yordanos Temesgen (Yordi). I have background in learning and also .. learnin
 
 - GitHub: [@yordinia](https://github.com/yordinia)
 - Twitter: [@yordinia](https://twitter.com/yordinia)
-- LinkedIn: [Yordanos-Temesgen](https://linkedin.com/in/yordanos-temesgen-251b6a202
-)
+- LinkedIn: [Yordanos-Temesgen](https://linkedin.com/in/yordanos-temesgen-251b6a202)
 
 ## 🤝 Contributing
 
 ```
 Contributions, issues, and feature requests are welcome!
 ```
-
 
 ## Show your support
 
