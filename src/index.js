@@ -1,10 +1,5 @@
 import "./style.css";
 import * as THREE from "three";
-/*
-images
- background: url("../src/images/baground.svg");
-
-*/
 
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
