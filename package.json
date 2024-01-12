@@ -5,9 +5,9 @@
   "main": "load.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production && webpack serve --open",
-    "start": "webpack serve --open"
+    "dev": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",

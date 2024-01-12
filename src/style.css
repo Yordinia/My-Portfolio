@@ -5,6 +5,7 @@
 }
 
 canvas {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,7 +27,6 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 7rem 24px 0 24px;
   gap: 58px;
   width: 100vw;
 }
@@ -45,7 +45,6 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 0.7em;
   width: 100vw;
   background-color: white;
 }
@@ -63,7 +62,6 @@ nav {
   text-align: center;
   margin: 1em auto;
   color: #172b4d;
-  padding: 0;
 }
 
 #aspancolor {
@@ -75,7 +73,6 @@ nav {
   margin: 0 auto;
   text-align: center;
   color: #172b4d;
-  width: 120%;
   max-width: 700px;
   font-style: normal;
   font-weight: 600;
@@ -86,11 +83,11 @@ nav {
 
 .socials {
   display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  max-width: 100vw;
   list-style-type: none;
-  gap: 2em;
-  margin: 1rem 0.5rem;
-  justify-content: center;
-  width: 100%;
+  gap: 1rem;
 }
 
 .languages {
@@ -101,14 +98,14 @@ nav {
   align-items: center;
   list-style-type: none;
   gap: 16px;
-  padding: 8px 12px;
+  padding: 8px 0;
   width: 327px;
   border-radius: 4px;
 }
 
 .languages li {
   background: #ebf0ee;
-  padding: 8px 10px;
+  padding: 8px 0;
   text-decoration: none;
   font-size: 12px;
   font-weight: 600;
@@ -119,10 +116,9 @@ nav {
 
 .works-details li {
   width: 100%;
-  width: max-content;
   background: #fff;
   border-radius: 10px;
-  padding: 12px;
+  padding: 12px 0;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -161,12 +157,13 @@ nav {
 }
 
 .my-container {
+  width: 100vw;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
   gap: 58px;
-  width: 100vw;
   padding: 64px 0;
 }
 
@@ -251,14 +248,12 @@ a:active {
 .about {
   background: url("../src/images/about-me-left.svg") left top no-repeat,
     url("../src/images/about-me-right.svg") right top no-repeat;
-  background-size: 118.87px;
-  background-size: 107.94px;
+  background-size: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 25px;
+  padding: 64px 0;
   gap: 58px;
-  width: 100vw;
 }
 
 .about-text {
@@ -266,7 +261,6 @@ a:active {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  padding: 0 25px;
   gap: 24px;
 }
 
@@ -291,7 +285,7 @@ a:active {
 .about-btn {
   align-items: center;
   margin: auto;
-  padding: 12px;
+  padding: 12px 0;
   gap: 10px;
   width: 159px;
   height: 48px;
@@ -323,12 +317,10 @@ footer {
   border-radius: 4px;
 }
 
-.about-wrapper {
-  max-width: 327px;
-  max-height: 352px;
-  width: 100%;
+div.about-wrapper {
   display: flex;
   flex-direction: column; /* to set contets in the cross axis */
+  max-width: 400px;
   justify-content: flex-start;
   margin: 35px 0;
   background: #ebf0ee;
@@ -349,9 +341,10 @@ footer {
 }
 
 .works-details {
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
+  /*padding-left: 1.2rem;
+  padding-right: 1.2rem;*/
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr); /* provide three columns with 1fr */
   gap: 10px;
   margin-top: 30px;
@@ -365,7 +358,6 @@ button:hover {
   border: 12px solid#98b336;
   border-radius: 50%;
   line-height: 60%;
-  padding: 0;
 }
 
 .footer-wrap {
@@ -403,7 +395,7 @@ form {
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  padding: 10px 15px;
+  padding: 10px 0;
   width: 100%;
   opacity: 1;
 }
@@ -427,22 +419,16 @@ form {
   height: 114px;
   border: 2px solid #acb7c3;
   border-radius: 8px;
-  padding: 10px 15px;
+  padding: 10px 0;
 }
 
 .footer-email {
-  width: 100%;
+  width: 100vw;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 32px;
   text-align: center;
   color: #42526e;
-}
-
-.footer-media-link {
-  width: 100%;
-  max-width: 170.17px;
-  margin: 1.5rem auto;
 }
 
 /* CSS Class for the JS  */
@@ -486,7 +472,7 @@ form {
 
 .for-body {
   background-color: #dfe1e6;
-  padding: 1.3rem;
+  padding: 1.3rem 0;
 }
 
 .for-desktop-nav {
@@ -498,7 +484,7 @@ form {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 16px;
+  padding: 16px 0;
   gap: 12px;
   width: 100%;
   background: #fff;
@@ -564,18 +550,39 @@ form {
   font-size: 17px;
   line-height: 20px;
   letter-spacing: 0.03em;
-  padding: 8px 6px;
+  padding: 8px 0;
   gap: 12px;
+}
+
+div.about-card-container {
+  display: flex;
+  margin: auto;
+  width: 100vw;
+  max-width: 400px;
+  padding: 1rem 0;
+  flex-direction: column;
+  gap: 10%;
 }
 
 @media (min-width: 1022px) {
   .first-page {
-    /*background: url("../src/images/bground.png") no-repeat center center;
-    background-size: cover;*/
+    background: url("../src/images/bground.png") no-repeat center center;
+    background-size: cover;
     align-items: center;
     box-sizing: border-box;
     margin: auto;
     width: 100vw;
+  }
+
+  div.about-card-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 80%;
+  }
+
+  div.about-wrapper {
+    width: 60%;
+    max-width: 800px;
   }
 
   .img-btn {
@@ -685,12 +692,6 @@ form {
     height: fit-content;
   }
 
-  .about-card-container {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-  }
-
   .footer-wrap {
     display: flex;
     flex-direction: row;
@@ -720,7 +721,7 @@ form {
     background: #c1c7d0;
     mix-blend-mode: multiply;
     padding: 122px 260px;
-    padding: 1.3rem;
+    padding: 1.3rem 0;
   }
 
   .for-desktop-nav {
@@ -747,8 +748,8 @@ form {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    padding-right: 15px;
-    padding-top: 25px;
+    /*    padding-right: 15px;
+    padding-top: 25px;*/
   }
 
   .card-image a {
