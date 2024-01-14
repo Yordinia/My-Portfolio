@@ -10,7 +10,7 @@ module.exports = {
   },
   // devtool: 'inline-source-map',
   devServer: {
-    static: "./dist", // Serve static files from the 'dist' directory
+    static: "./docs", // Serve static files from the 'docs' directory
     port: 3000,
     open: true,
   },
@@ -21,15 +21,28 @@ module.exports = {
   ],
   output: {
     filename: "[name].bundle.js", // Use the entry point name for the bundle filename
-    path: path.resolve(__dirname, "dist"), // Output to the 'distt' directory
+    path: path.resolve(__dirname, "docs"), // Output to the 'docs' directory
     clean: true, // Clean the output directory before building
   },
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: ["style-loader", "css-loader"], // Process CSS files with 'style-loader' and 'css-loader'
+      } /* 
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images/", // Specify the output directory for images
+            },
+          },
+        ],
       },
+      */,
     ],
   },
 };

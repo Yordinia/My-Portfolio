@@ -19,12 +19,8 @@ body {
   font-size: 16px;
 }
 
-main {
-  background: url("../src/images/bground.png") no-repeat center center;
-  background-size: cover;
-}
-
 .first-page {
+  background: url("../src/images/bground.png") no-repeat center center;
   background-size: cover;
   align-items: center;
   display: flex;
