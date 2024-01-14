@@ -14,12 +14,14 @@ canvas {
 
 body {
   font-family: "Inter", "ariel", Verdana, Tahoma, sans-serif;
-  margin: 0 auto;
-  width: 100vw;
   box-sizing: border-box;
   align-items: center;
   font-size: 16px;
-  position: absolute;
+}
+
+main {
+  background: url("../src/images/bground.png") no-repeat center center;
+  background-size: cover;
 }
 
 .first-page {
@@ -45,6 +47,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
   width: 100vw;
   background-color: white;
 }
@@ -60,7 +63,7 @@ nav {
 .intro {
   width: 100%;
   text-align: center;
-  margin: 1em auto;
+  margin: 3em auto;
   color: #172b4d;
 }
 
@@ -564,10 +567,8 @@ div.about-card-container {
   gap: 10%;
 }
 
-@media (min-width: 1022px) {
+@media (min-width: 700px) {
   .first-page {
-    background: url("../src/images/bground.png") no-repeat center center;
-    background-size: cover;
     align-items: center;
     box-sizing: border-box;
     margin: auto;
@@ -610,7 +611,6 @@ div.about-card-container {
     align-items: center;
     gap: 25px;
     width: 100%;
-    margin: auto;
   }
 
   .detail-nav ul {
